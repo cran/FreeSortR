@@ -1,0 +1,31 @@
+export(
+    "DescriptionPartition",
+    "Dissimil",
+    "DissTot",
+    "Cooccurrences",
+    "ConsensusPartition",
+    "RandIndex",
+    "MdsDiss",
+    "MdsDimChoice",
+    "MdsSort",
+    "plotMds",
+    "plotTerms",
+    "ReadSortFile",
+    "SortingPartition"
+)
+exportMethods(
+    "show",
+    "summary",
+    "nGroups",
+    "getPartition",
+    "getConfig",
+    "getStress",
+    "getPercent"
+)
+exportClasses(
+    "SortingPartition",
+    "SortingMds" 
+)
+importFrom(vegan,procrustes)
+importFrom(ellipse,ellipse)
+import(methods, smacof)
