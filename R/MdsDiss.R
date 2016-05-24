@@ -9,7 +9,7 @@ MdsDiss<-function(MatDissimil,ndim=2,metric=TRUE,ties="primary",itmax=5000,eps=1
   
   #library(smacof)
   # Metric Mds of MatDissimil data
-  res<-smacofSym(MatDissimil,ndim=ndim,type="ratio",verbose=FALSE,itmax=itmax,eps=eps)
+  res<-smacofSym(MatDissimil,ndim=ndim,type="interval",verbose=FALSE,itmax=itmax,eps=eps)
   Config<-scale(res$conf,center=TRUE,scale=FALSE)  
   # Rotation of the solution
   W<- Config%*%t(Config)                    
@@ -29,7 +29,7 @@ MdsDiss<-function(MatDissimil,ndim=2,metric=TRUE,ties="primary",itmax=5000,eps=1
   # Percentage of inertia
   Percent<-bid$d/sum(bid$d)
   #Kruskal Stress
-  Stress<-sqrt(sum((res$obsdiss-res$confdiss)^2)/sum(res$confdiss^2))
+  Stress<-sqrt(sum((res$dhat-res$confdiss)^2)/sum(res$confdiss^2))
   
   res<-list(Config=Config,Percent=Percent,Stress=Stress)
   return(res)

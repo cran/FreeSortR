@@ -20,7 +20,7 @@ MdsSort<-function(Part,ndim=2,nboot=0,metric=FALSE,ties="primary",itmax=5000,eps
     
     #library(smacof)
     
-    res<-MdsDiss(MatDissim,ndim=ndim,metric=metric,ties,itmax,eps)
+    res<-MdsDiss(MatDissim,ndim=ndim,metric=metric,ties=ties,itmax,eps)
     Config<-res$Config
     rownames(Config)<-Part@LabStim
     colnames(Config)<-paste(rep("Dim"),1:ndim)

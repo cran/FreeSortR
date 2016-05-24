@@ -27,5 +27,8 @@ exportClasses(
     "SortingMds" 
 )
 importFrom(vegan,procrustes)
+importFrom("graphics", "abline", "arrows", "lines", "plot", "symbols","text")
+importFrom("stats", "as.dist", "cor", "cov", "cutree", "hclust")
+importFrom("utils", "read.csv2")
 importFrom(ellipse,ellipse)
 import(methods, smacof)
