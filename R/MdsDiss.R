@@ -29,7 +29,7 @@ MdsDiss<-function(MatDissimil,ndim=2,metric=TRUE,ties="primary",itmax=5000,eps=1
   # Percentage of inertia
   Percent<-bid$d/sum(bid$d)
   #Kruskal Stress
-  Stress<-sqrt(sum((res$dhat-res$confdiss)^2)/sum(res$confdiss^2))
+  Stress<-sqrt(sum((res$dhat-res$confdist)^2)/sum(res$confdist^2))
   
   res<-list(Config=Config,Percent=Percent,Stress=Stress)
   return(res)

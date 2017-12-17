@@ -1,4 +1,4 @@
-056336fe3e3be2a119c95421730ede42 *DESCRIPTION
+53a879b8f373bb6561e7faccd1d42402 *DESCRIPTION
 9cb7ff3abf8f6886548da64e8e394e72 *NAMESPACE
 9a84e9e3ac534821c1e853cac15a1d64 *R/ConsensusPartition.R
 15c4de9fdefcc3c2842fadc58382dafd *R/Cooccurrences.R
@@ -7,7 +7,7 @@ cb92b3bc079052a9a8e2d65e9e3d5572 *R/DescriptionPartition.R
 e9635573e35c4d0b712e9e47bb0018b3 *R/DissTot.R
 5739575efb34a81768d01351debbfee8 *R/Dissimil.R
 699cef6835062940d5ab1c94ebe5b02d *R/MdsDimChoice.R
-1fc168a6c7f3d029a79b15fe766cae60 *R/MdsDiss.R
+02c9fffb359e2f119550583bee4d83f2 *R/MdsDiss.R
 86c74f7e8c24145f3447852099c0cfdb *R/MdsSort.R
 6b508ff104b1cd7088046b320eba0d46 *R/RandAdjusted.R
 e4028d1726d1be1382b5c88cd7df815c *R/RandIndex.R
